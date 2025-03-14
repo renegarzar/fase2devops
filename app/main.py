@@ -1,6 +1,9 @@
 from flask import Flask
-from app.routes import cliente_routes
 import database
+import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
+from app.routes import cliente_routes
 
 app = Flask(__name__)
 database.init_db()
