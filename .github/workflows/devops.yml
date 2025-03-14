@@ -26,8 +26,8 @@ jobs:
           pip install -r requirements.txt
 
       - name: Verificar si existen pruebas
-  	run: |
-    	  if [ -d "tests" ]; then pytest tests/; else echo "No hay pruebas, saltando..."; fi
+	run:
+	  if [ -d "tests" ]; then pytest tests/; else echo "No hay pruebas, saltando..."; fi
 
       - name: Construir imagen Docker
         run: docker build -t gestion-clientes .
