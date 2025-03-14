@@ -1,5 +1,5 @@
 from flask import Flask
-import database
+from app import database
 import sys
 import os
 sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
