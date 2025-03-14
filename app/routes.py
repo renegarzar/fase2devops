@@ -1,4 +1,5 @@
 from flask import Blueprint, request, jsonify
+from app.database import DB_FILE
 import sqlite3
 
 cliente_routes = Blueprint("clientes", __name__)

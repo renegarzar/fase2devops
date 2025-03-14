@@ -1,5 +1,5 @@
 from flask import Flask
-from routes import cliente_routes
+from app.routes import cliente_routes
 import database
 
 app = Flask(__name__)
